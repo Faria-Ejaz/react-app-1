@@ -1,0 +1,160 @@
+.header-area {
+    border-bottom: 1px solid #EAEEF8;
+    padding: 24px 0;
+    font-size: 16px;
+}
+
+.header-right {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.navbar-collapse {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    border: 1px solid #EAEEF8;
+    min-width: 225px;
+    top: 55px;
+    z-index: 99;
+}
+
+.navbar-nav .nav-link {
+    text-align: left;
+    display: block;
+    color: #101011;
+    font-weight: 400;
+    padding: 10px 20px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-bottom: 1px solid #EAEEF8;
+    text-align: right;
+}
+
+.navbar-nav .nav-link:hover {
+    background: #FDCE2E;
+    border-color: #FDCE2E;
+    color: #fff;
+}
+
+.navbar-nav li:last-child .nav-link {
+    border-bottom: 0;
+}
+
+
+.navbar-toggler {
+    width: 23px;
+    height: 16px;
+    position: relative;
+    margin-left: 84px;
+}
+
+.navbar-toggler span {
+    background: #FDCE2E;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    top: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.navbar-toggler:hover span {
+    background: #FDCE2E;
+}
+
+.navbar-toggler.collapsed span {
+    background: #000;
+}
+
+.navbar-toggler span:nth-child(3) {
+    top: auto;
+    bottom: 0;
+}
+
+.navbar-toggler span:nth-child(2) {
+    top: 6px;
+}
+
+.btn.btn-yellow {
+    border: 2px solid #FDCE2E;
+    border-radius: 24px;
+    color: #101011;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.btn.btn-yellow:hover {
+    background: #FDCE2E;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggler {
+        margin-left: 20px;
+    }
+
+    .header-area {
+        font-size: 14px;
+    }
+
+    .btn.btn-yellow {
+        padding: 10px 20px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        background: #fff;
+        right: 0;
+        border: 1px solid #EAEEF8;
+        border-radius: 12px;
+        min-width: 223px;
+        top: 55px;
+        z-index: 99;
+        padding: 15px 0;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: left;
+        display: block;
+        color: #101011;
+        font-weight: 600;
+        padding: 10px 44px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #FDCE2E;
+    }
+
+    .header-right {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+}
