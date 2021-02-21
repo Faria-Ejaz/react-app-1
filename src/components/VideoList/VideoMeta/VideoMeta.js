@@ -8,7 +8,7 @@ import React from "react";
 import "./VideoMeta.scss";
 import VideoLinks from "../VideoLinks/VideoLinks";
 
-export default function VideoMeta({videoDetails}) {
+export default function VideoMeta({ videoDetails }) {
 
   return (
     <div className="video-meta">
@@ -20,7 +20,7 @@ export default function VideoMeta({videoDetails}) {
               <img src="/images/icon-1.svg" alt=""></img>
             </span>
             <span className="text">
-              <strong>{videoDetails.views}</strong>
+              <strong>{videoDetails.watchedCount}</strong>
               <span className="d-none d-md-inline-block">views</span>
               <span className="d-block d-md-none">said watched</span>
             </span>
@@ -30,15 +30,14 @@ export default function VideoMeta({videoDetails}) {
               <img src="/images/icon-2.svg" alt=""></img>
             </span>
             <span className="text">
-              <strong>{videoDetails.recommend}</strong> recommend
+              <strong>{videoDetails.recommendedCount}</strong> recommend
             </span>
           </li>
           <li className="d-flex d-md-none">
             <span className="icon">
               <img src="/images/icon-5.svg" alt=""></img>
             </span>
-            <span className="text">
-              <strong>{videoDetails.share}</strong> Share
+            <span className="text"> Share
             </span>
           </li>
           <li>
@@ -46,12 +45,12 @@ export default function VideoMeta({videoDetails}) {
               <img src="/images/icon-3.svg" alt=""></img>
             </span>
             <span className="text">
-              <strong>{videoDetails.watchlist}</strong> in watchlist
+              <strong>{videoDetails.watchListCount}</strong> in watchlist
             </span>
           </li>
         </ul>
       </div>
-      <VideoLinks/>
+      <VideoLinks />
 
     </div>
   );
